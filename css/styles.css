@@ -242,17 +242,19 @@ ul {
 }
 
 .main-icons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
     background-color: var(--background-color-grey);
-    width: 270px;
     height: 120px;
     margin-bottom: 30px;
-    padding: 25px 100px;
 }
-
 
 .main-page-item {
     flex-basis: calc((100% - 90px) / 4);
 }
+
 
 .about-image {
     display: block;
@@ -382,29 +384,37 @@ ul {
 .clients-list {
     display: flex;
     justify-content: center;
+    align-items: center;
     column-gap: 30px;
-    flex-basis: calc((100% - 150px) / 6);
     margin-top: 50px;
 }
 
 .clients-item {
-    border: 1px solid var(--icon-color);
-    border-radius: 4px;
-    padding: 16px 32px;
+    flex-basis: calc((100% - 150px) / 6);
 }
 
 .cliets-logo {
     fill: var(--icon-color);
 }
 
-.clients-item:hover,
-.clients-item:focus {
-    border-color: var(--accent-color);
-    cursor: pointer
+.clients-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    border-color: var(--icon-color);
+    border-radius: 4px;
+    height: 92px;
 }
 
-.clients-item:hover .cliets-logo,
-.clients-item:focus .cliets-logo {
+.clients-link:hover,
+.clients-link:focus {
+    border-color: var(--accent-color);
+    cursor: pointer;
+}
+
+.clients-link:hover .cliets-logo,
+.clients-link:focus .cliets-logo {
     fill: var(--accent-color);
 }
 
@@ -519,6 +529,17 @@ footer {
     flex-basis: calc((100% - 60px) / 3);
     border: 1px solid;
     border-color: #EEEEEE;
+}
+
+.portholio-btn-link {
+    display: block;
+}
+
+.portholio-btn-link:hover,
+.portholio-btn-link:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list-item:focus,

@@ -386,7 +386,6 @@ ul {
     justify-content: center;
     align-items: center;
     column-gap: 30px;
-    margin-top: 50px;
 }
 
 .clients-item {
@@ -527,23 +526,28 @@ footer {
 
 .portfolio-list-item {
     flex-basis: calc((100% - 60px) / 3);
-    border: 1px solid;
-    border-color: #EEEEEE;
 }
 
-.portholio-btn-link {
-    display: block;
-}
 
-.portholio-btn-link:hover .portholio-btn-link:focus {
+.portfolio-btn-list-item:hover,
+.portfolio-btn-list-item:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
-.portfolio-list-item:focus,
-.portfolio-list-item:hover {
+.portfolio-list-link:focus,
+.portfolio-list-link:hover {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-list-link {
+    display: block;
+}
+
+.item-cotnainer {
+    border: 1px solid;
+    border-color: #EEEEEE;
 }
 
 .portfolio-img {
